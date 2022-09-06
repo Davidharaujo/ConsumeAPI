@@ -55,7 +55,7 @@ export const Navigation = styled.nav `
   ul {
     display: flex;
     width: 40%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 20px;
   }

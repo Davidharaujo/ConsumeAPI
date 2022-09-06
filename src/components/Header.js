@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Home from '../services/home'
 import Movies from '../services/movies'
 import Series from '../services/series'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
@@ -15,9 +14,6 @@ export default class Header extends Component {
         <BrowserRouter>
             <ul>
                 <li><Link to='/'>
-                Home
-                </Link></li>
-                <li><Link to='/filmes'>
                 Filmes Populares
                 </Link></li>
                 <li><Link to='/series'>
@@ -25,8 +21,7 @@ export default class Header extends Component {
                 </Link></li>
             </ul>
             <Routes>
-                <Route path='/' element={<Home />}/>
-                <Route path='/filmes' element={<Movies />}/>
+                <Route path='/' element={<Movies />}/>
                 <Route path='/series' element={<Series />}/>
             </Routes>
         </BrowserRouter>
