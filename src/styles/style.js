@@ -81,7 +81,7 @@ export const CaixaFilme = styled.div `
   display: flex;
   position: relative;
   width: 25%;
-  margin: 10px;
+  margin: 20px;
   cursor: pointer;
 
   figcaption{
